@@ -12,11 +12,8 @@ import java.io.Writer;
 import java.net.URL;
 
 import javax.net.ssl.HttpsURLConnection;
-import javax.net.ssl.SSLSocketFactory;
 
 import java.util.*;
-
-import java.util.logging.*;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

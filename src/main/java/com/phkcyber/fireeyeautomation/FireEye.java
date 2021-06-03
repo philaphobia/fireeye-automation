@@ -1,6 +1,7 @@
 package com.phkcyber.fireeyeautomation;
 
-import common.Common;
+import com.phkcyber.fireeyeautomation.common.Common;
+import com.phkcyber.fireeyeautomation.common.Email;
 import com.phkcyber.fireeyeautomation.pojo.ExploitBlocked;
 import com.phkcyber.fireeyeautomation.pojo.ExploitBlocked.Alert.EventValues.AnalysisDetail;
 import com.phkcyber.fireeyeautomation.pojo.FireEyeAlert;
@@ -21,6 +22,7 @@ import java.text.SimpleDateFormat;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.phkcyber.fireeyeautomation.writer.ExcelWriter;
 
 
 public class FireEye {

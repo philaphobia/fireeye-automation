@@ -2,7 +2,7 @@ package com.phkcyber.fireeyeautomation.pojo;
 
 import java.util.Date;
 
-import common.Common;
+import com.phkcyber.fireeyeautomation.common.Common;
 
 public class Host {
 	public String _id;

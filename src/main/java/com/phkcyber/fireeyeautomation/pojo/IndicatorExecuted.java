@@ -8,7 +8,7 @@ import java.util.List;
 
 import com.google.gson.annotations.SerializedName;
 
-import common.Common;
+import com.phkcyber.fireeyeautomation.common.Common;
 
 public class IndicatorExecuted {
 	public enum ALERT_METADATA {

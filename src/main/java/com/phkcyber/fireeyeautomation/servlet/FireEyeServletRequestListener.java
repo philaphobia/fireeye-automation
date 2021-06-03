@@ -6,7 +6,7 @@ import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
 
  
-public class ITSecurityServletRequestListener implements ServletRequestListener {
+public class FireEyeServletRequestListener implements ServletRequestListener {
  
   public void requestInitialized(ServletRequestEvent servletRequestEvent) {
 

@@ -17,12 +17,6 @@ public class ServletUtilities {
    * @param response the response header
    */
   public static void addSecurityHeaders(HttpServletResponse response) {
-    //click-jacking defense so content cannot be framed from a different website
-    //response.addHeader("X-Frame-Options", "SAMEORIGIN");
-
-    //forces client to only use content-type sent from server and not try to
-    //determine the content type by magic sniffing
-    //response.addHeader("X-Content-Type-Options", "nosniff");
   }
 
 
@@ -54,7 +48,7 @@ public class ServletUtilities {
    * Stream the image back to the requestor in the
    * format of a response.
    *
-   * @param data the bytes of the report
+   * @param filePath of the report
    * @param response HTTP headers in servlet format
    */
   public static void streamFile(String filePath, HttpServletResponse response) {

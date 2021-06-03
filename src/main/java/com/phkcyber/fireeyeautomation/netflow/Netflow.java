@@ -18,10 +18,6 @@ import com.phkcyber.fireeyeautomation.ir.logstorage.SilkSearch;
 public class Netflow {
 	private SimpleDateFormat dfIn = new SimpleDateFormat("MM/dd/yyyy");
 	private SimpleDateFormat dfNetflow = new SimpleDateFormat("yyyy/MM/dd");
-
-    //private SimpleDateFormat dfDateTime = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss", Locale.US);
-       // private final SimpleDateFormat dfJustTime = new SimpleDateFormat("HH:mm:ss", Locale.US);
-       // private final SimpleDateFormat dfJustDate = new SimpleDateFormat("yyyy'-'MM'-'dd", Locale.US);
         private SimpleDateFormat dfDateTime = new SimpleDateFormat("yyyy'-'MM'-'dd HH:mm:ss", Locale.US);
 
 	private int MAX_LOGS_RETURN=500;

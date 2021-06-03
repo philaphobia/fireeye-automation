@@ -8,8 +8,7 @@ import javax.mail.internet.*;
 import javax.activation.*;
 
 public class Email {
-  //private final String host = "aspmx.l.google.com";
-  private final String host = "10.102.209.96";
+  private final String smtpHost = "";
 	
   private List<String> recipientTo=null;
   private List<String> recipientCc=null;
@@ -49,7 +48,7 @@ public class Email {
     Properties props = System.getProperties();
 
     // Setup mail server
-    props.setProperty("mail.smtp.host", host);
+    props.setProperty("mail.smtp.host", smtpHost);
 
     // Get the default Session object.
     Session session = Session.getDefaultInstance(props);
