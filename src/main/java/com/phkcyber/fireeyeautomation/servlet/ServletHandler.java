@@ -3,10 +3,8 @@ package com.phkcyber.fireeyeautomation.servlet;
 import com.phkcyber.fireeyeautomation.FireEye;
 
 import java.io.*;
-
 import java.util.logging.*;
 import java.nio.charset.Charset;
-
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

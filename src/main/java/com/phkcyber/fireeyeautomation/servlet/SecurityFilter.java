@@ -1,7 +1,5 @@
 package com.phkcyber.fireeyeautomation.servlet;
 
-import com.phkcyber.fireeyeautomation.common.Utils;
-
 import java.io.IOException;
 
 import java.lang.IllegalStateException;

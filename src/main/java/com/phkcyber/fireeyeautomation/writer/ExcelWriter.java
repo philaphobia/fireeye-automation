@@ -18,16 +18,15 @@ import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellReference;
 import org.apache.poi.xssf.usermodel.XSSFDataFormat;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFFont;
 
 public class ExcelWriter {
   private SXSSFWorkbook wb;
   private Sheet shLogs; 
   private int currentRow;
-  //private String outputFile;
 
   private CellStyle styleWrapText=null;
   private CellStyle csExcelDate=null;
-  //CellStyle csHyperLink=null;
 
   private String[] fields = {"src","dst","sport","dport","proto","bytes","timestamp","duration","dst_country","application"};
     
@@ -36,7 +35,6 @@ public class ExcelWriter {
   private SimpleDateFormat dfDateTime = new SimpleDateFormat("MM-dd-yyyy HH:mm:ss", Locale.US);
 
   public ExcelWriter() {
- 
     //create the workbook 
     wb = new SXSSFWorkbook(100);
 
@@ -142,11 +140,10 @@ public class ExcelWriter {
     CellStyle cellStyle = wb.createCellStyle();
     Font font = wb.createFont();
 
-//    font.setFontName(Font.FONT_ARIAL);  
     font.setFontHeightInPoints((short) 12);  
-    font.setBoldweight(Font.BOLDWEIGHT_BOLD);  
+    font.setBold(true);
     cellStyle.setFont(font);
-    cellStyle.setAlignment(CellStyle.ALIGN_CENTER);
+    cellStyle.setAlignment(HorizontalAlignment.CENTER);
 
     return(cellStyle);
   } 
@@ -155,7 +152,7 @@ public class ExcelWriter {
     CellStyle cellStyle = wb.createCellStyle();
     Font font = wb.createFont();
 
-    font.setBoldweight(Font.BOLDWEIGHT_BOLD);
+    font.setBold(true);
     cellStyle.setFont(font);
 
     return(cellStyle);

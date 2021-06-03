@@ -34,10 +34,9 @@ public class FireEye {
 	private String[] to= {};
 	private String from = "";
 
-	public FireEye(String[] to, String from) {
-
+	public FireEye() {
+		//instantiate
 	}
-			
 
 	public void process(String json) throws Exception {
 		Map<KEY,String> parsed = parseJson(json);

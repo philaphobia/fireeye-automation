@@ -12,8 +12,8 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 
-import com.phkcyber.fireeyeautomation.ir.logformat.LogEntry;
-import com.phkcyber.fireeyeautomation.ir.logstorage.SilkSearch;
+import com.phkcyber.fireeyeautomation.logformat.LogEntry;
+import com.phkcyber.fireeyeautomation.net.SilkSearch;
 
 public class Netflow {
 	private SimpleDateFormat dfIn = new SimpleDateFormat("MM/dd/yyyy");
